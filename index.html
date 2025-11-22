@@ -2,6 +2,7 @@
 <html lang="ta">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Song Index</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 40px; background:#fafafa; }
@@ -11,8 +12,17 @@
                  box-shadow:0 1px 4px rgba(0,0,0,0.08); }
     .song-item a { text-decoration:none; color:#1a237e; font-size:1.05rem; font-weight:600; }
     .song-meta { font-size:0.9rem; color:#666; margin-top:4px; }
+    /* Add below for mobile */
+    @media (max-width: 600px) {
+      body { font-size: 1.25rem; }
+      h1 { font-size: 1.6rem; }
+      .song-item a { font-size: 1.2rem; }
+      .song-meta { font-size: 1rem; }
+      .song-list { padding: 0 8px; }
+    }
   </style>
 </head>
+
 <body>
   <h1>கிறிஸ்துமஸ் பாடல்கள்</h1>
 
@@ -38,3 +48,4 @@
   </div>
 </body>
 </html>
+
