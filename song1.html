@@ -2,6 +2,7 @@
 <html lang="ta">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>சின்னஞ்சிறு சுதனே</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 40px; background:#fafafa; }
@@ -11,8 +12,17 @@
     .meta { text-align:center; color:#666; margin-bottom:18px; }
     .lyrics { white-space:pre-line; line-height:1.7; font-size:1.02rem; }
     a.back { display:inline-block; margin-bottom:16px; color:#1a237e; text-decoration:none; }
+    @media (max-width: 600px) {
+      body { margin: 10px; }
+      .container { padding: 10px 6px; }
+      h1 { font-size: 1.5rem; }
+      .meta { font-size: 1.1rem; }
+      .lyrics { font-size: 1.18rem; line-height: 1.8; }
+      a.back { font-size: 1.08rem; }
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <a class="back" href="index.html">← Back to songs</a>
@@ -49,3 +59,4 @@
   </div>
 </body>
 </html>
+
